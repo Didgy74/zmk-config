@@ -67,19 +67,19 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q      &kp W      &kp F        &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &none
+		&kp Q      &kp W      &kp F        &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp COMMA
 		&mt LGUI A &mt LALT R &mt LSHIFT S &mt LCTL T         &kp G 		&kp M    &mt RCTL N &mt RSFT E &mt LALT I &mt RGUI O
-		&kp Z      &kp X      &kp C        &mt RALT D         &none			&none    &mt RALT H &kp V      &kp K      &none
+		&kp Z      &kp X      &kp C        &mt RALT D         &none			&none    &mt RALT H &kp V      &kp K      &kp PERIOD
           				                   &lt LEFT_LAYER TAB &kp SPC  		&kp BSPC &lt RIGHT_LAYER ENTER
 		>;
 		};
 
        		left_layer {
 		bindings = <
-		&none    &none     &none    &kp RA(8)   &kp RA(9)		&none     &kp NUM_7      &kp NUM_8      &kp NUM_9      &none
-		&kp LGUI &kp LALT  &kp LSFT &kp LCTL    &none	 		&kp NUM_0 &mt RCTL NUM_4 &mt RSFT NUM_5 &mt RGUI NUM_6 &none
-		&none    &none 	   &none    &kp RALT    &none 			&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &none
-					                &trans      &trans  		&trans    &none
+		&none    &none    &kp RA(7)     &kp RA(0)             &none 		&kp MINUS &kp NUM_7      &kp NUM_8      &kp NUM_9      &kp LBRC
+		&kp LGUI &kp LALT &kp LSFT      &kp LCTL              &none	 		&kp NUM_0 &mt RCTL NUM_4 &mt RSFT NUM_5 &mt RGUI NUM_6 &kp SEMICOLON
+		&none    &none 	  &kp LESS_THAN &mt RALT GREATER_THAN &none 		&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp DOUBLE_QUOTES
+					                    &trans                &trans  		&trans    &none
 		>;
 		};
 		
