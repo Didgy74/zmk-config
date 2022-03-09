@@ -64,7 +64,7 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q      &kp W      &kp F        &kp P      &kp B 				&kp J    &kp U      &kp Y      &kp Y      &kp A
+		&kp Q      &kp W      &kp F        &kp P      &kp B 				&kp J    &kp L      &kp U      &kp Y      &kp A
 		&mt LGUI A &mt LALT R &mt LSHIFT S &mt LCTL T &kp G 			    &kp M    &mt RCTL N &mt RSFT E &mt RALT I &mt RGUI O
 		&kp Z      &kp X      &kp C        &kp D      &kp V				    &kp K    &kp H      &kp V      &kp K      &bt BT_CLR
           				                   &bt BT_CLR &kp SPC  				&kp BSPC &bt BT_CLR 
