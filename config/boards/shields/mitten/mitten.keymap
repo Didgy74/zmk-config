@@ -79,16 +79,16 @@
 		&none    &none    &kp RA(NUM_7)   &kp RA(NUM_0)            &none 		&kp MINUS &kp NUM_7      &kp NUM_8      &kp NUM_9      &kp LBKT
 		&kp LGUI &kp LALT &mt LSFT SLASH  &mt LCTL NON_US_HASH     &none	 	&kp NUM_0 &mt RCTL NUM_4 &mt RSFT NUM_5 &mt RGUI NUM_6 &kp SEMICOLON
 		&none    &none 	  &kp NON_US_BSLH &mt RALT LS(NON_US_BSLH) &none 		&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp SINGLE_QUOTE
-					                      &trans                   &trans	  	&trans    &none
+					                      &lt LEFT_LAYER TAB       &trans	  	&trans    &none
 		>;
 		};
 		
 		right_layer {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+		&none              &kp HOME &kp UP   &kp END   &kp PAGE_UP    		&none     &none    &none    &none    &none 
+		&kp K_CONTEXT_MENU &kp LEFT &kp DOWN &kp RIGHT &kp PAGE_DN	 		&none     &kp RCTL &kp RSFT &kp LALT &kp RGUI
+		&none              &none    &none    &none     &none	    	    &none 	  &kp RALT &none    &none    &none
+										     &none     &trans  		    	&trans    &lt RIGHT_LAYER ENTER
 		>;
 		};	
 		
