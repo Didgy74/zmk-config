@@ -103,7 +103,7 @@
 		bindings = <
 		&none       &none       &none       &none       &none		&none  &none       &none       &none	    &none
 		&mt LGUI F2 &mt LALT F3 &mt LSFT F4 &mt LCTL F5 &kp F6  	&kp F7 &mt RCTL F8 &mt RSFT F9 &mt LALT F10 &mt RGUI F11 
-		&kp F1      &none 		&none 		&kp RALT 	&kp F7   	&none  &kp RALT    &none	   &none 		&kp F12   
+		&kp F1      &none 		&none 		&none 		&none   	&none  &kp RALT    &none	   &none 		&kp F12   
 											&trans      &trans  	&trans &trans 
 		>;
 		};	
