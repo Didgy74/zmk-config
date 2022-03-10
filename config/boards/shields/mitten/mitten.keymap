@@ -46,10 +46,10 @@
         compatible = "zmk,combos";                
     };
 
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
                 
-       		default_layer {
+        default_layer {
 		bindings = <
 		&kp Q      &kp W      &kp F        &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp K
 		&mt LGUI A &mt LALT R &mt LSHIFT S &mt LCTL T         &kp G 		&kp M    &mt RCTL N &mt RSFT E &mt LALT I &mt RGUI O
