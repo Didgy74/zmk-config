@@ -37,7 +37,7 @@
                 
        		default_layer {
 		bindings = <
-		&bt BT_CLR &kp W      &kp F        &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp COMMA
+		&bt BT_CLR &bt BT_NXT &bt BT_SEL 0 &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp COMMA
 		&mt LGUI A &mt LALT R &mt LSHIFT S &mt LCTL T         &kp G 		&kp M    &mt RCTL N &mt RSFT E &mt LALT I &mt RGUI O
 		&kp Z      &kp X      &kp C        &mt RALT D         &none			&none    &mt RALT H &kp V      &kp K      &kp PERIOD
           				                   &lt LEFT_LAYER TAB &kp SPC  		&kp BSPC &lt RIGHT_LAYER ENTER
@@ -64,10 +64,10 @@
 		
 		tri_layer {
 		bindings = <
-		&bt BT_CLR  &bt BT_NXT  &none       &none         &none			&kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT  &kp C_VOLUME_DOWN &kp C_VOLUME_UP
-		&mt LGUI F2 &mt LALT F3 &mt LSFT F4 &mt LCTL F5   &kp F6  		&kp F7     &mt RCTL F8      &mt RSFT F9 &mt LALT F10      &mt RGUI F11 
-		&kp F1      &none 		&none 		&mt RALT CAPS &none   		&none  	   &kp RALT        	&none	    &none 		      &kp F12   
-											&trans       &trans  		&trans 	   &trans 
+		&bt BT_CLR  &bt BT_NXT  &bt BT_SEL 0    &none         &none	    	&kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT  &kp C_VOLUME_DOWN &kp C_VOLUME_UP
+		&mt LGUI F2 &mt LALT F3 &mt LSFT F4     &mt LCTL F5   &kp F6  		&kp F7     &mt RCTL F8      &mt RSFT F9 &mt LALT F10      &mt RGUI F11 
+		&kp F1      &none 		&kp PRINTSCREEN &mt RALT CAPS &none   		&none  	   &kp RALT        	&none	    &none 		      &kp F12   
+											    &trans        &trans  		&trans 	   &trans 
 		>;
 		};	
         
