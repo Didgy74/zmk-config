@@ -32,7 +32,7 @@
         };
     };
 
-	behaviors {
+    behaviors {
         mnp_ht: media_next_prev_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MEDIA_NEXT_PREV_HOLD_TAP";
