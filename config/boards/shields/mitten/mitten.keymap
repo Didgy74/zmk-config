@@ -46,10 +46,10 @@
 
        		left_layer {
 		bindings = <
-		&none    &none    &kp RA(NUM_7)   &kp RA(NUM_0)            &none 		&kp MINUS &kp NUM_7      &kp NUM_8      &kp NUM_9      &kp LBKT
-		&kp LGUI &kp LALT &mt LSFT SLASH  &mt LCTL NON_US_HASH     &none	 	&kp NUM_0 &mt RCTL NUM_4 &mt RSFT NUM_5 &mt RGUI NUM_6 &kp SEMICOLON
-		&none    &none 	  &kp NON_US_BSLH &mt RALT LS(NON_US_BSLH) &none 		&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp SINGLE_QUOTE
-					                      &trans			       &trans	  	&trans    &trans
+		&none    &none          &kp RA(NUM_7)   &kp RA(NUM_0)            &kp RIGHT_BRACKET 		&kp MINUS &kp NUM_7      &kp NUM_8      &kp NUM_9      &kp LEFT_BRACKET
+		&kp LGUI &mt LALT GRAVE &mt LSFT SLASH  &mt LCTL NON_US_HASH     &kp EQUAL	 			&kp NUM_0 &mt RCTL NUM_4 &mt RSFT NUM_5 &mt RGUI NUM_6 &kp SEMICOLON
+		&none    &none 	        &kp NON_US_BSLH &mt RALT LS(NON_US_BSLH) &none 					&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp SINGLE_QUOTE
+												&trans			       	 &trans	  				&trans    &trans
 		>;
 		};
 		
