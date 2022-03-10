@@ -19,10 +19,6 @@
 	tapping_term_ms = <TAPPING_TERM>;
 };
 
-&lt {
-	flavor = "hold-preferred";
-}
-
 / { 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -32,8 +28,8 @@
         };
     };
 
-    keymap {
-        compatible = "zmk,keymap";
+	keymap {
+		compatible = "zmk,keymap";
                 
         default_layer {
         bindings = <
