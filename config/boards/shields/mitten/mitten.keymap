@@ -17,6 +17,10 @@
 	tapping_term_ms = <150>;
 };
 
+&lt {
+	flavor = "hold-preferred";
+}
+
 / { 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -37,9 +41,9 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q      &kp W      &kp F        &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp COMMA
+		&kp Q      &kp W      &kp F        &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp K
 		&mt LGUI A &mt LALT R &mt LSHIFT S &mt LCTL T         &kp G 		&kp M    &mt RCTL N &mt RSFT E &mt LALT I &mt RGUI O
-		&kp Z      &kp X      &kp C        &mt RALT D         &none			&none    &mt RALT H &kp V      &kp K      &kp PERIOD
+		&kp Z      &kp X      &kp C        &mt RALT D         &none			&none    &mt RALT H &kp PERIOD &kp COMMA  &kp V
           				                   &lt LEFT_LAYER TAB &kp SPC  		&kp BSPC &lt RIGHT_LAYER ENTER
 		>;
 		};
