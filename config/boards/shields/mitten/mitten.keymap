@@ -37,16 +37,6 @@
             tapping-term-ms = <500>;
             bindings = <&kp>, <&kp>;
         };
-		
-		bt_clr_ht: bt_clear_hold_tap {
-		    compatible = "zmk,behavior-hold-tap";
-            label = "BT_CLEAR_HOLD_TAP";
-			#binding-cells = <2>;
-			#sensor-binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <2000>;
-            bindings = <&bt>, <&bt>;
-        };
     };
 
 	keymap {
@@ -65,7 +55,7 @@
 		bindings = <
 		&none    			   &kp EQUAL      &kp RA(NUM_7)   &kp RA(NUM_0)            &none 		&kp MINUS &kp NUM_7      &kp NUM_8      &kp NUM_9      &kp LEFT_BRACKET
 		&mt LGUI RIGHT_BRACKET &mt LALT GRAVE &mt LSFT SLASH  &mt LCTL NON_US_HASH     &none		&kp NUM_0 &mt RCTL NUM_4 &mt RSFT NUM_5 &mt RGUI NUM_6 &kp SEMICOLON
-		&none    			   &none 	      &kp NON_US_BSLH &mt RALT LS(NON_US_BSLH) &none 		&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp SINGLE_QUOTE
+		&none    			   &kp K_PASTE    &kp NON_US_BSLH &mt RALT LS(NON_US_BSLH) &none 		&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp SINGLE_QUOTE
 															  &trans			       &trans	  	&trans    &trans
 		>;
 		};
@@ -81,9 +71,9 @@
 		
 		tri_layer {
 		bindings = <
-		&bt_clr_ht BT_CLR BT_NXT &bt BT_NXT   &bt BT_SEL 0    &none         &none	    	&mc_ht C_PREV C_NEXT  &kp C_PLAY_PAUSE &kp C_VOLUME_UP &kp C_VOLUME_DOWN &none
-		&mt LGUI F2              &mt LALT F3  &mt LSFT F4     &mt LCTL F5   &kp F6			&kp F7                &mt RCTL F8      &mt RSFT F9     &mt LALT F10      &mt RGUI F11 
-		&kp F1                   &none 		  &kp PRINTSCREEN &mt RALT CAPS &none 			&none  	              &kp RALT         &none	       &none 		     &kp F12   
+		&bt BT_CLR  &bt BT_NXT   &bt BT_SEL 0    &none         &none	    	&mc_ht C_PREV C_NEXT  &kp C_PLAY_PAUSE &kp C_VOLUME_UP &kp C_VOLUME_DOWN &none
+		&mt LGUI F2 &mt LALT F3  &mt LSFT F4     &mt LCTL F5   &kp F6			&kp F7                &mt RCTL F8      &mt RSFT F9     &mt LALT F10      &mt RGUI F11 
+		&kp F1      &none 		 &kp PRINTSCREEN &mt RALT CAPS &none 			&none  	              &kp RALT         &none	       &none 		     &kp F12   
 											                  &trans        &trans			&trans 	              &trans
 		>;
 		};	
