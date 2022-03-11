@@ -41,7 +41,7 @@
 		bt_clr_ht: bt_clear_hold_tap {
 		    compatible = "zmk,behavior-hold-tap";
             label = "BT_CLEAR_HOLD_TAP";
-			#binding-cells = <0>;
+			#binding-cells = <2>;
 			#sensor-binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <2000>;
