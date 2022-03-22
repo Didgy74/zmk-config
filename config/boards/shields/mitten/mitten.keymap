@@ -13,13 +13,8 @@
 #define RIGHT_LAYER 3
 #define THIRD_LAYER 4
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 125
 #define MOD_TAP_FLAVOR "tap-preferred"
-
-&mt {
-    flavor = "tap-preferred";
-	tapping_term_ms = <125>;
-};
 
 / { 
     conditional_layers {
