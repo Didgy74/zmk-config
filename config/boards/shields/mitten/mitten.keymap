@@ -46,7 +46,7 @@
         default_layer {
         bindings = <
 		&kp Q      &kp W      &kp F                &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp V
-		&mt LGUI A &mt LALT R &mt LSHIFT S         &mt LCTL T         &kp G 		&kp M    &mt RCTL N &mt RSFT E &mt LALT I &mt RGUI O
+		&mt LGUI A &mt LALT R &mt LSHIFT S         &mt LCTL T         &kp G 		&kp M    &mt LCTL N &mt LSFT E &mt LALT I &mt LGUI O
 		&kp Z      &kp X      &lt LEFT_LAYER_SYM C &mt RALT D         &none			&none    &mt RALT H &kp COMMA  &kp PERIOD &kp K
           				                           &lt LEFT_LAYER TAB &kp SPC  		&kp BSPC &lt RIGHT_LAYER ENTER
 		>;
@@ -55,7 +55,7 @@
  		left_layer {
 		bindings = <
 		&none    			   &kp EQUAL      &kp RA(NUM_7)   &kp RA(NUM_0)            &none 		&kp MINUS &kp NUM_7      &kp NUM_8      &kp NUM_9      &kp LEFT_BRACKET
-		&mt LGUI RIGHT_BRACKET &mt LALT GRAVE &mt LSFT SLASH  &mt LCTL NON_US_HASH     &none		&kp NUM_0 &mt RCTL NUM_4 &mt RSFT NUM_5 &mt RGUI NUM_6 &kp SEMICOLON
+		&mt LGUI RIGHT_BRACKET &mt LALT GRAVE &mt LSFT SLASH  &mt LCTL NON_US_HASH     &none		&kp NUM_0 &mt LCTL NUM_4 &mt LSFT NUM_5 &mt LALT NUM_6 &mt LGUI SEMICOLON
 		&none    			   &kp LC(V)      &kp NON_US_BSLH &mt RALT LS(NON_US_BSLH) &none 		&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp SINGLE_QUOTE
 															  &trans			       &trans	  	&trans    &trans
 		>;
@@ -64,9 +64,9 @@
 	
 		left_layer_sym {
 		bindings = <
-		&none &none &none                &none  &none 			&none  &kp RA(NUM_7)   &kp RA(NUM_0)       &none         &kp NON_US_HASH
-		&none &none &none                &none  &none			&none  &kp RS(NUM_8)   &kp RS(NUM_9)       &kp RA(NUM_8) &kp RA(NUM_9)
-		&none &none &lt LEFT_LAYER_SYM C &none  &none	 		&none  &kp NON_US_BSLH &kp LS(NON_US_BSLH) &none         &kp SLASH
+		&none &none &none                &none  &none 			&none  &kp RA(NUM_7)        &kp RA(NUM_0)       &none              &kp NON_US_HASH
+		&none &none &none                &none  &none			&none  &mt LCTL RS(NUM_8)   &mt LSFT RS(NUM_9)  &mt LALT RA(NUM_8) &mt LGUI RA(NUM_9)
+		&none &none &lt LEFT_LAYER_SYM C &none  &none	 		&none  &mt RALT NON_US_BSLH &kp LS(NON_US_BSLH) &none              &kp SLASH
 										 &trans &trans	  		&trans &trans
 		>;
 		};
@@ -74,7 +74,7 @@
 		right_layer {
 		bindings = <
 		&kp ESC            &kp HOME &kp UP     &kp END    &kp PAGE_UP    	&none  &none    &none    &none    &none 
-		&kp K_CONTEXT_MENU &kp LEFT &kp DOWN   &kp RIGHT  &kp PAGE_DOWN	 	&none  &kp RCTL &kp RSFT &kp LALT &kp RGUI
+		&kp K_CONTEXT_MENU &kp LEFT &kp DOWN   &kp RIGHT  &kp PAGE_DOWN	 	&none  &kp LCTL &kp LSFT &kp LALT &kp LGUI
 		&none              &none    &kp INSERT &kp DELETE &none	    	    &none  &kp RALT &none    &none    &none
 										       &trans     &trans  		    &trans &trans
 		>;
@@ -83,7 +83,7 @@
 		tri_layer {
 		bindings = <
 		&bt BT_CLR  &bt BT_NXT  &bt BT_SEL 0    &none         &none	    	&none  &mc_ht C_PREV C_NEXT &kp C_PLAY_PAUSE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
-		&mt LGUI F2 &mt LALT F3 &mt LSFT F4     &mt LCTL F5   &kp F6		&kp F7 &mt RCTL F8          &mt RSFT F9      &mt LALT F10      &mt RGUI F11 
+		&mt LGUI F2 &mt LALT F3 &mt LSFT F4     &mt LCTL F5   &kp F6		&kp F7 &mt LCTL F8          &mt LSFT F9      &mt LALT F10      &mt LGUI F11 
 		&kp F1      &none 		&kp PRINTSCREEN &mt RALT CAPS &none 		&none  &kp RALT             &none	         &none 		       &kp F12   
 											    &trans        &trans		&trans &trans
 		>;
