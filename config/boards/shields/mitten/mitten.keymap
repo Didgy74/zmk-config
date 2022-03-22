@@ -43,7 +43,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_MOD_TAP";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <500>;
             bindings = <&kp>, <&kp>;
 			// Now include all the right hand keys
@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_MOD_TAP";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <500>;
             bindings = <&kp>, <&kp>;
 			// Now include all the left hand keys
