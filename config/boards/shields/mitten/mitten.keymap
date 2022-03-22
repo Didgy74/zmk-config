@@ -38,6 +38,17 @@
             tapping-term-ms = <1000>;
             bindings = <&kp>, <&kp>;
         };
+		
+		l_mt: left_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_MOD_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1000>;
+            bindings = <&kp>, <&kp>;
+			// Now include all the right hand keys
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
+        };
     };
 
 	keymap {
@@ -45,19 +56,19 @@
                 
         default_layer {
         bindings = <
-		&kp Q      &kp W      			&kp F        &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp V
-		&mt LGUI A &mt LALT R 			&mt LSHIFT S &mt LCTL T         &kp G 			&kp M    &mt LCTL N &mt LSFT E &mt LALT I &mt LGUI O
-		&kp Z      &lt LEFT_LAYER_SYM X &kp C        &mt RALT D         &none			&none    &mt RALT H &kp COMMA  &kp PERIOD &kp K
-          				                             &lt LEFT_LAYER TAB &kp SPC  		&kp BSPC &lt RIGHT_LAYER ENTER
+		&kp Q        &kp W      	      &kp F          &kp P              &kp B			&kp J    &kp L      &kp U      &kp Y      &kp V
+		&l_mt LGUI A &l_mt LALT R 	      &l_mt LSHIFT S &l_mt LCTL T       &kp G 			&kp M    &mt LCTL N &mt LSFT E &mt LALT I &mt LGUI O
+		&kp Z        &lt LEFT_LAYER_SYM X &kp C          &l_mt RALT D       &none			&none    &mt RALT H &kp COMMA  &kp PERIOD &kp K
+          				                                 &lt LEFT_LAYER TAB &kp SPC  		&kp BSPC &lt RIGHT_LAYER ENTER
 		>;
 		};
 
  		left_layer {
 		bindings = <
-		&none    			   &kp EQUAL      &kp RA(NUM_7)   &kp RA(NUM_0)            &none 		&kp MINUS &kp NUM_7      &kp NUM_8      &kp NUM_9      &kp LEFT_BRACKET
-		&mt LGUI RIGHT_BRACKET &mt LALT GRAVE &mt LSFT SLASH  &mt LCTL NON_US_HASH     &none		&kp NUM_0 &mt LCTL NUM_4 &mt LSFT NUM_5 &mt LALT NUM_6 &mt LGUI SEMICOLON
-		&none    			   &kp LC(V)      &kp NON_US_BSLH &mt RALT LS(NON_US_BSLH) &none 		&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp SINGLE_QUOTE
-															  &trans			       &trans	  	&trans    &trans
+		&none    			     &kp EQUAL        &kp RA(NUM_7)    &kp RA(NUM_0)              &none 		&kp MINUS &kp NUM_7      &kp NUM_8      &kp NUM_9      &kp LEFT_BRACKET
+		&l_mt LGUI RIGHT_BRACKET &l_mt LALT GRAVE &l_mt LSFT SLASH &l_mt LCTL NON_US_HASH     &none			&kp NUM_0 &mt LCTL NUM_4 &mt LSFT NUM_5 &mt LALT NUM_6 &mt LGUI SEMICOLON
+		&none    			     &kp LC(V)        &kp NON_US_BSLH  &l_mt RALT LS(NON_US_BSLH) &none 		&none     &mt RALT NUM_1 &kp NUM_2      &kp NUM_3      &kp SINGLE_QUOTE
+															       &trans			          &trans	  	&trans    &trans
 		>;
 		};
 	    
@@ -82,10 +93,10 @@
 		
 		tri_layer {
 		bindings = <
-		&bt BT_CLR  &bt BT_NXT  &bt BT_SEL 0    &none         &none	    	&none  &mc_ht C_PREV C_NEXT &kp C_PLAY_PAUSE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
-		&mt LGUI F2 &mt LALT F3 &mt LSFT F4     &mt LCTL F5   &kp F6		&kp F7 &mt LCTL F8          &mt LSFT F9      &mt LALT F10      &mt LGUI F11 
-		&kp F1      &none 		&kp PRINTSCREEN &mt RALT CAPS &none 		&none  &kp RALT             &none	         &none 		       &kp F12   
-											    &trans        &trans		&trans &trans
+		&bt BT_CLR    &bt BT_NXT    &bt BT_SEL 0    &none           &none	    	&none  &mc_ht C_PREV C_NEXT &kp C_PLAY_PAUSE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
+		&l_mt LGUI F2 &l_mt LALT F3 &l_mt LSFT F4   &l_mt LCTL F5   &kp F6			&kp F7 &mt LCTL F8          &mt LSFT F9      &mt LALT F10      &mt LGUI F11 
+		&kp F1        &none 		&kp PRINTSCREEN &l_mt RALT CAPS &none 			&none  &kp RALT             &none	         &none 		       &kp F12   
+											        &trans          &trans			&trans &trans
 		>;
 		};	
         
