@@ -103,10 +103,10 @@
 		
 		right_layer_sym {
 		bindings = <
-		&none                        &none                &none            &none                      &none 			&none  &none    &none    &none                      &none
-		&l_mt LGUI LS(RIGHT_BRACKET) &l_mt LALT LS(GRAVE) &l_mt LSFT SLASH &l_mt LCTL LS(NON_US_HASH) &none				&none  &kp LCTL &kp LSFT &kp LALT                   &kp LGUI
-		&none                        &none                &none            &l_mt RALT LS(EQUAL)       &none 			&none  &kp RALT &none    &lt RIGHT_LAYER_SYM PERIOD &none
-						                                                   &trans                     &trans	  		&trans &trans
+		&none                        &none                &none                &none                      &none 			&none  &none    &none    &none                      &none
+		&l_mt LGUI LS(RIGHT_BRACKET) &l_mt LALT LS(GRAVE) &l_mt LSFT LS(SLASH) &l_mt LCTL LS(NON_US_HASH) &none				&none  &kp LCTL &kp LSFT &kp LALT                   &kp LGUI
+		&none                        &none                &none                &l_mt RALT LS(EQUAL)       &none 			&none  &kp RALT &none    &lt RIGHT_LAYER_SYM PERIOD &none
+						                                                       &trans                     &trans	  		&trans &trans
 		>;
 		};
 		
