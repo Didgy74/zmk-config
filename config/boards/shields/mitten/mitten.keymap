@@ -14,7 +14,7 @@
 #define RIGHT_LAYER_SYM 4
 #define THIRD_LAYER 5
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 150
 #define MOD_TAP_FLAVOR "tap-preferred"
 
 / { 
