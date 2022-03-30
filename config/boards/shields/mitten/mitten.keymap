@@ -14,7 +14,7 @@
 #define RIGHT_LAYER_SYM 4
 #define THIRD_LAYER 5
 
-#define TAPPING_TERM 125
+#define TAPPING_TERM 175
 #define MOD_TAP_FLAVOR "balanced"
 
 / { 
