@@ -14,8 +14,8 @@
 #define RIGHT_LAYER_SYM 4
 #define THIRD_LAYER 5
 
-#define TAPPING_TERM 150
-#define MOD_TAP_FLAVOR "tap-preferred"
+#define TAPPING_TERM 125
+#define MOD_TAP_FLAVOR "balanced"
 
 / { 
     conditional_layers {
@@ -73,20 +73,20 @@
 
  		left_layer {
 		bindings = <
-		&none    			       &kp EQUAL          &kp RA(NUM_7)      &kp RA(NUM_0)                &none 			&kp MINUS &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp LEFT_BRACKET
-		&c_l_mt LGUI RIGHT_BRACKET &c_l_mt LALT GRAVE &c_l_mt LSFT SLASH &c_l_mt LCTL NON_US_HASH     &none				&kp NUM_0 &c_r_mt LCTL NUM_4 &c_r_mt LSFT NUM_5 &c_r_mt LALT NUM_6 &c_r_mt LGUI SEMICOLON
-		&none    			       &kp LC(V)          &kp NON_US_BSLH    &c_l_mt RALT LS(NON_US_BSLH) &none 			&none     &c_r_mt RALT NUM_1 &kp NUM_2          &kp NUM_3          &kp SINGLE_QUOTE
-															             &trans			              &trans	  		&trans    &trans
+		&none    			       &kp EQUAL          &none              &none                    &none 			&kp MINUS &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp LEFT_BRACKET
+		&c_l_mt LGUI RIGHT_BRACKET &c_l_mt LALT GRAVE &c_l_mt LSFT SLASH &c_l_mt LCTL NON_US_HASH &none				&kp NUM_0 &c_r_mt LCTL NUM_4 &c_r_mt LSFT NUM_5 &c_r_mt LALT NUM_6 &c_r_mt LGUI SEMICOLON
+		&none    			       &kp LC(V)          &none			     &kp RALT                 &none 			&none     &c_r_mt RALT NUM_1 &kp NUM_2          &kp NUM_3          &kp SINGLE_QUOTE
+															             &trans			          &trans	  		&trans    &trans
 		>;
 		};
 	    
 	
 		left_layer_sym {
 		bindings = <
-		&none &none                &none &none  &none 			&none  &kp RA(NUM_7)            &kp RA(NUM_0)          &none                  &kp NON_US_HASH
-		&none &none                &none &none  &none			&none  &c_r_mt LCTL RS(NUM_8)   &c_r_mt LSFT RS(NUM_9) &c_r_mt LALT RA(NUM_8) &c_r_mt LGUI RA(NUM_9)
-		&none &lt LEFT_LAYER_SYM X &none &none  &none 			&none  &c_r_mt RALT NON_US_BSLH &kp LS(NON_US_BSLH)    &none                  &kp SLASH
-						                 &trans &trans	  		&trans &trans
+		&none &none &none &none  &none 			&none  &kp RA(NUM_7)            &kp RA(NUM_0)          &none                  &kp NON_US_HASH
+		&none &none &none &none  &none			&none  &c_r_mt LCTL RS(NUM_8)   &c_r_mt LSFT RS(NUM_9) &c_r_mt LALT RA(NUM_8) &c_r_mt LGUI RA(NUM_9)
+		&none &none &none &none  &none 			&none  &c_r_mt RALT NON_US_BSLH &kp LS(NON_US_BSLH)    &none                  &kp SLASH
+						  &trans &trans	  		&trans &trans
 		>;
 		};
 		
