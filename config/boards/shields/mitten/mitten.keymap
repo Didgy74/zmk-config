@@ -15,7 +15,7 @@
 #define THIRD_LAYER 5
 
 #define TAPPING_TERM 150
-#define MOD_TAP_FLAVOR "balanced"
+#define MOD_TAP_FLAVOR "tap-preferred"
 
 / { 
     conditional_layers {
