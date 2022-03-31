@@ -73,10 +73,10 @@
 
  		left_layer {
 		bindings = <
-		&none    			       &kp EQUAL          &none              &none                    &none 			&kp MINUS &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp LEFT_BRACKET
-		&c_l_mt LGUI RIGHT_BRACKET &c_l_mt LALT GRAVE &c_l_mt LSFT SLASH &c_l_mt LCTL NON_US_HASH &none				&kp NUM_0 &c_r_mt LCTL NUM_4 &c_r_mt LSFT NUM_5 &c_r_mt LALT NUM_6 &c_r_mt LGUI SEMICOLON
-		&none    			       &kp LC(V)          &none			     &kp RALT                 &none 			&none     &c_r_mt RALT NUM_1 &kp NUM_2          &kp NUM_3          &kp SINGLE_QUOTE
-															             &trans			          &trans	  		&trans    &trans
+		&none    			       &none              &none    &none              &none 			&kp MINUS &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp LEFT_BRACKET
+		&c_l_mt LGUI RIGHT_BRACKET &c_l_mt LALT GRAVE &kp LSFT &kp LCTL           &none				&kp NUM_0 &c_r_mt LCTL NUM_4 &c_r_mt LSFT NUM_5 &c_r_mt LALT NUM_6 &c_r_mt LGUI SEMICOLON
+		&none    			       &kp LC(V)          &none    &c_l_mt RALT EQUAL &none 			&none     &c_r_mt RALT NUM_1 &kp NUM_2          &kp NUM_3          &kp SINGLE_QUOTE
+															   &trans			  &trans	  		&trans    &trans
 		>;
 		};
 	    
