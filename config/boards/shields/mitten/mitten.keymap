@@ -26,6 +26,7 @@
         };
     };
 	
+	/*
 	combos {
         compatible = "zmk,combos";
         combo_rsft_rgui {
@@ -33,6 +34,30 @@
             key-positions = <17 19>;
             bindings = <&kp LSFT &kp LGUI>;
 			layers = <0>;
+        };
+    };
+	*/
+	
+	macros {
+        password: password {
+            label = "password";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp N>
+                , <&macro_tap &kp i>
+                , <&macro_tap &kp l>
+                , <&macro_tap &kp s>
+                , <&macro_tap &kp E>
+                , <&macro_tap &kp r>
+                , <&macro_tap &kp K>
+                , <&macro_tap &kp u>
+                , <&macro_tap &kp l>
+                , <&macro_tap &kp 1>
+                , <&macro_tap &kp 2>
+                , <&macro_tap &kp 3>
+                , <&macro_tap &kp !>
+                ;
         };
     };
 
@@ -125,7 +150,7 @@
 		bindings = <
 		&bt BT_CLR      &bt BT_NXT      &bt BT_SEL 0    &none             &none	    	    &none  &mc_ht C_PREV C_NEXT &kp C_PLAY_PAUSE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
 		&c_l_mt LGUI F2 &c_l_mt LALT F3 &c_l_mt LSFT F4 &c_l_mt LCTL F5   &kp F6			&kp F7 &c_r_mt LCTL F8      &c_r_mt LSFT F9  &c_r_mt LALT F10  &c_r_mt LGUI F11 
-		&kp F1          &none 		    &kp PRINTSCREEN &c_l_mt RALT CAPS &none 			&none  &kp RALT             &none	         &none 		       &kp F12   
+		&kp F1          &none 		    &kp PRINTSCREEN &c_l_mt RALT CAPS &none 			&none  &kp RALT             &none	         &password 		   &kp F12   
 											            &trans            &trans			&trans &trans
 		>;
 		};	
