@@ -90,8 +90,9 @@
             tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp>, <&kp>;
 			// Now include all the right hand keys
-			// This commented line includes tumbkeys.
-            //hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33
+			// Add the same-hand mod keys 
+				10 11 12 13 23>;
         };
 		c_r_mt: custom_right_mod_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -101,7 +102,9 @@
             tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp>, <&kp>;
 			// Now include all the left hand keys
-            //hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31
+			// Add the same-hand mod keys 
+				16 17 18 19 26>;
         };
     };
 
@@ -116,6 +119,7 @@
 		&c_l_mt LGUI A &c_l_mt LALT R 	    &c_l_mt LSHIFT S &c_l_mt LCTL T         &kp G 			    		&kp M                &c_r_mt LCTL N            &c_r_mt LSFT E &c_r_mt LALT I             &c_r_mt LGUI O
 		// 20          21      	            22               23                     24							25                   26                        27             28                         29
 		&kp Z          &lt LEFT_LAYER_SYM X &kp C            &c_l_mt RALT D         &none						&none                &c_r_mt RALT H            &kp COMMA      &lt RIGHT_LAYER_SYM PERIOD &kp K
+		//                                                   30                     31							32					 33
           				                                     &lt LEFT_LAYER_SYM TAB &lt LEFT_LAYER SPC      	&lt RIGHT_LAYER BSPC &lt RIGHT_LAYER_SYM ENTER
 		>;
 		};
