@@ -31,7 +31,7 @@
         combo_rsft_rgui {
             timeout-ms = <TAPPING_TERM>;
             key-positions = <17 19>;
-            bindings = <&kp LSFT>;
+            bindings = <&kp LSFT &kp LGUI>;
 			layers = <0>;
         };
     };
