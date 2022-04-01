@@ -26,7 +26,7 @@
         };
     };
 	
-	/*
+	
 	combos {
         compatible = "zmk,combos";
         combo_rsft_rgui {
@@ -35,8 +35,15 @@
             bindings = <&kp LSFT &kp LGUI>;
 			layers = <0>;
         };
+		
+        test {
+            timeout-ms = <50>;
+            key-positions = <0 5>;
+            bindings = <&kp X>;
+			layers = <0>;
+        };
     };
-	*/
+	
 	
 	macros {
         password: password {
