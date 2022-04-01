@@ -51,19 +51,19 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp N>
-                , <&macro_tap &kp i>
-                , <&macro_tap &kp l>
-                , <&macro_tap &kp s>
-                , <&macro_tap &kp E>
-                , <&macro_tap &kp r>
-                , <&macro_tap &kp K>
-                , <&macro_tap &kp u>
-                , <&macro_tap &kp l>
-                , <&macro_tap &kp 1>
-                , <&macro_tap &kp 2>
-                , <&macro_tap &kp 3>
-                , <&macro_tap &kp !>
+                = <&macro_tap &kp LS(N)>
+                , <&macro_tap &kp I>
+                , <&macro_tap &kp L>
+                , <&macro_tap &kp S>
+                , <&macro_tap &kp LS(E)>
+                , <&macro_tap &kp R>
+                , <&macro_tap &kp LS(K)>
+                , <&macro_tap &kp U>
+                , <&macro_tap &kp L>
+                , <&macro_tap &kp NUM_1>
+                , <&macro_tap &kp NUM_2>
+                , <&macro_tap &kp NUM_3>
+                , <&macro_tap &kp LS(NUM_1)>
                 ;
         };
     };
