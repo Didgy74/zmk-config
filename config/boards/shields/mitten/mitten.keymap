@@ -14,7 +14,7 @@
 #define RIGHT_LAYER_SYM 4
 #define THIRD_LAYER 5
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 175
 #define MOD_TAP_FLAVOR "tap-preferred"
 
 / { 
@@ -52,8 +52,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
 			// The docs recommend a minimum of 30ms
-			wait-ms = <30>;
-			tap-ms = <30>;
+			wait-ms = <25>;
+			tap-ms = <25>;
             bindings
                 = <&macro_tap &kp LS(N)>
                 , <&macro_tap &kp I>
@@ -92,7 +92,7 @@
 			// Now include all the right hand keys
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33
 			// Add the same-hand mod keys 
-				10 11 12 13 23>;
+				10 11 12 13>;
         };
 		c_r_mt: custom_right_mod_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -104,7 +104,7 @@
 			// Now include all the left hand keys
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31
 			// Add the same-hand mod keys 
-				16 17 18 19 26>;
+				16 17 18 19>;
         };
     };
 
