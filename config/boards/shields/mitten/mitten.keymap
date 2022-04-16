@@ -153,7 +153,7 @@
 		//                                       
 		&none &none &none &none  &none 			&none  &none &none &none &kp LS(NON_US_HASH)
 		&none &none &none &none  &none			&none  &none &none &none &none
-		&none &none &none &none  &none 			&none  &none &none &none &LS(SLASH)
+		&none &none &none &none  &none 			&none  &none &none &none &kp LS(SLASH)
 						  &trans &trans	  		&trans &trans
 		>;
 		};
