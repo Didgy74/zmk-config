@@ -30,11 +30,7 @@
 			if-layers = <LEFT_LAYER SYM_LAYER>;
 			then-layer = <CTRL_LAYER>;
 		};
-		
-		ctrl_layer_right {
-			if-layers = <RIGHT_LAYER SYM_LAYER>;
-			then-layer = <CTRL_LAYER>;
-		};
+	
     };
 	
 	macros {
