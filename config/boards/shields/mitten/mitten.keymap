@@ -45,13 +45,13 @@
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp Q>;
-			layers = <0>
+			layers = <0>;
         };
 		combo_V {
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp V>;
-			layers = <0>
+			layers = <0>;
         };
     };
 	
