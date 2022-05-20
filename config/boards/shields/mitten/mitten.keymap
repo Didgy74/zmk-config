@@ -58,7 +58,7 @@
 		combo_Nor_AA {
             timeout-ms = <50>;
             key-positions = <26 27>;
-            bindings = <&kp V>;
+            bindings = <&kp NOR_AA>;
 			layers = <1>;
         };
     };
