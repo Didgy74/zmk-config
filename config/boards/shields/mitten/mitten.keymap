@@ -16,8 +16,10 @@
 #define CTRL_LAYER_LEFT 5
 #define CTRL_LAYER_RIGHT 6
 
-#define QUESTION_MARK LS(MINUS)
-#define EXCLAMATION_MARK LS(NUM_1)
+#define NOR_APOSTROPHY NON_US_HASH
+#define NOR_HYPHEN SLASH
+#define NOR_QUESTION_MARK LS(MINUS)
+#define NOR_EXCLAMATION_MARK LS(NUM_1)
 #define NOR_AE SINGLE_QUOTE
 #define NOR_OE SEMICOLON
 #define NOR_AA LEFT_BRACKET
@@ -129,18 +131,19 @@
             bindings = <&c_l_mt LS(LCTL) V>;
 			layers = <0>;
         };
+		combo_Apostrophy {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <21 22>;
+            bindings = <&kp NOR_APOSTROPHY>;
+			layers = <0>;
+        };
 		combo_Exclamation {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <22 23>;
-            bindings = <&c_l_mt RALT EXCLAMATION_MARK>;
+            bindings = <&c_l_mt RALT NOR_EXCLAMATION_MARK>;
 			layers = <0>;
         };
-		combo_Question {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <26 27>;
-            bindings = <&c_r_mt RALT QUESTION_MARK>;
-			layers = <0>;
-        };
+	
 		combo_K {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <16 17>;
@@ -157,6 +160,18 @@
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 19>;
             bindings = <&c_r_mt LA(LGUI) NOR_OE>;
+			layers = <0>;
+        };
+		combo_Question {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <26 27>;
+            bindings = <&c_r_mt RALT NOR_QUESTION_MARK>;
+			layers = <0>;
+        };
+		combo_Hyphen {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <27 28>;
+            bindings = <&kp NOR_HYPHEN>;
 			layers = <0>;
         };
 
