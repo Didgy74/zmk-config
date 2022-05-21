@@ -16,6 +16,8 @@
 #define CTRL_LAYER_LEFT 5
 #define CTRL_LAYER_RIGHT 6
 
+#define QUESTION_MARK LS(MINUS)
+#define EXCLAMATION_MARK LS(NUM_1)
 #define NOR_AE SINGLE_QUOTE
 #define NOR_OE SEMICOLON
 #define NOR_AA LEFT_BRACKET
@@ -111,14 +113,32 @@
         compatible = "zmk,combos";
         combo_Q {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <1 2>;
-            bindings = <&kp Q>;
+            key-positions = <10 11>;
+            bindings = <&c_l_mt LG(LALT) Q>;
+			layers = <0>;
+        };
+		combo_NorAE {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <11 12>;
+            bindings = <&c_l_mt LA(LSHIFT) NOR_AE>;
 			layers = <0>;
         };
 		combo_V {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <12 13>;
-            bindings = <&c_l_mt LC(LSHIFT) V>;
+            bindings = <&c_l_mt LS(LCTL) V>;
+			layers = <0>;
+        };
+		combo_Exclamation {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <22 23>;
+            bindings = <&c_l_mt RALT EXCLAMATION_MARK>;
+			layers = <0>;
+        };
+		combo_Question {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <26 27>;
+            bindings = <&c_r_mt RALT QUESTION_MARK>;
 			layers = <0>;
         };
 		combo_K {
@@ -127,24 +147,19 @@
             bindings = <&c_r_mt LC(LSHIFT) K>;
 			layers = <0>;
         };
-	    combo_NorAE {
+		combo_NorAA {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <22 23>;
-            bindings = <&c_r_mt RALT NOR_AE>;
+            key-positions = <17 18>;
+            bindings = <&c_r_mt LS(LALT) NOR_AA>;
 			layers = <0>;
         };
 	    combo_NorOE {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <27 28>;
-            bindings = <&kp NOR_OE>;
+            key-positions = <18 19>;
+            bindings = <&c_r_mt LA(LGUI) NOR_OE>;
 			layers = <0>;
         };
-		combo_NorAA {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <26 27>;
-            bindings = <&c_r_mt RALT NOR_AA>;
-			layers = <0>;
-        };
+
 		
     };
 
@@ -175,10 +190,10 @@
 		
 		right_layer {
 		bindings = <
-		&kp ESC            &kp HOME &kp UP     &kp END    &kp PAGE_UP    	&none  &none    &none    &none    &none 
-		&kp K_CONTEXT_MENU &kp LEFT &kp DOWN   &kp RIGHT  &kp PAGE_DOWN	 	&none  &kp LCTL &kp LSFT &kp LALT &kp LGUI
-		&none              &none    &kp INSERT &kp DELETE &none	    	    &none  &kp RALT &none    &none    &none
-										       &trans     &trans  		    &trans &trans
+		&kp ESC            &kp HOME &kp UP   &kp END    &kp PAGE_UP    	    &none  &none    &none    &none    &none 
+		&kp K_CONTEXT_MENU &kp LEFT &kp DOWN &kp RIGHT  &kp PAGE_DOWN	 	&none  &kp LCTL &kp LSFT &kp LALT &kp LGUI
+		&none              &none    &none    &kp DELETE &none	    	    &none  &kp RALT &none    &none    &none
+										     &trans     &trans  		    &trans &trans
 		>;
 		};
 
