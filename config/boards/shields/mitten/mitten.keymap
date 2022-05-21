@@ -16,10 +16,14 @@
 #define CTRL_LAYER_LEFT 5
 #define CTRL_LAYER_RIGHT 6
 
+#define NOR_AE SINGLE_QUOTE
+#define NOR_OE SEMICOLON
 #define NOR_AA LEFT_BRACKET
 
 #define TAPPING_TERM 175
 #define MOD_TAP_FLAVOR "tap-preferred"
+#define COMBO_TIMEOUT 25
+
 
 / { 
     conditional_layers {
@@ -106,28 +110,40 @@
 	combos {
         compatible = "zmk,combos";
         combo_Q {
-            timeout-ms = <25>;
+            timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <1 2>;
             bindings = <&kp Q>;
 			layers = <0>;
         };
 		combo_V {
-            timeout-ms = <25>;
+            timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <12 13>;
             bindings = <&c_l_mt LC(LSHIFT) V>;
 			layers = <0>;
         };
 		combo_K {
-            timeout-ms = <25>;
+            timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <16 17>;
             bindings = <&c_r_mt LC(LSHIFT) K>;
 			layers = <0>;
         };
+	    combo_NorAE {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <22 23>;
+            bindings = <&c_r_mt RALT NOR_AE>;
+			layers = <0>;
+        };
+	    combo_NorOE {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <27 28>;
+            bindings = <&kp NOR_OE>;
+			layers = <0>;
+        };
 		combo_NorAA {
-            timeout-ms = <25>;
-            key-positions = <16 17>;
-            bindings = <&c_r_mt LC(LSHIFT) NOR_AA>;
-			layers = <1>;
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <26 27>;
+            bindings = <&c_r_mt RALT NOR_AA>;
+			layers = <0>;
         };
 		
     };
@@ -150,10 +166,10 @@
 
  		left_layer {
 		bindings = <
-		&none    &none     &none    &none    &none 			&kp MINUS &kp NUM_7          &kp NUM_8          &kp NUM_9          &none
-		&kp LGUI &kp LALT  &kp LSFT &kp LCTL &none			&kp NUM_0 &c_r_mt LCTL NUM_4 &c_r_mt LSFT NUM_5 &c_r_mt LALT NUM_6 &c_r_mt LGUI SEMICOLON
-		&none    &kp LC(V) &none    &kp RALT &none 			&none     &c_r_mt RALT NUM_1 &kp NUM_2          &kp NUM_3          &kp SINGLE_QUOTE
-									&trans	 &trans	  		&trans    &trans
+		&none    &none     &none     &none    &none 			&kp MINUS &kp NUM_7          &kp NUM_8          &kp NUM_9          &none
+		&kp LGUI &kp LALT  &kp LSFT  &kp LCTL &none				&kp NUM_0 &c_r_mt LCTL NUM_4 &c_r_mt LSFT NUM_5 &c_r_mt LALT NUM_6 &kp LGUI
+		&none    &kp LC(V) &kp LC(C) &kp RALT &none 			&none     &c_r_mt RALT NUM_1 &kp NUM_2          &kp NUM_3          &none
+									 &trans	  &trans	  		&trans    &trans
 		>;
 		};
 		
