@@ -115,30 +115,18 @@
 	combos {
         compatible = "zmk,combos";
         combo_Q {
-            timeout-ms = <50>;
-            key-positions = <22 23>;
+            timeout-ms = <25>;
+            key-positions = <12 13>;
             bindings = <&kp Q>;
 			layers = <0>;
         };
 		combo_V {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp V>;
-			layers = <0>;
-        };
-		combo_V2 {
             timeout-ms = <25>;
             key-positions = <16 17>;
             bindings = <&c_l_mt_combo_v LC(LSHIFT) V>;
 			layers = <0>;
         };
-		combo_Nor_AA {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp NOR_AA>;
-			layers = <1>;
-        };
-		combo_Nor_AA2 {
+		combo_NorAA {
             timeout-ms = <25>;
             key-positions = <16 17>;
             bindings = <&c_l_mt_combo_v LC(LSHIFT) NOR_AA>;
