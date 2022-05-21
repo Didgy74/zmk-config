@@ -128,7 +128,7 @@
         };
 		combo_V2 {
             timeout-ms = <50>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
             bindings = <&c_l_mt_combo_v LC(LSHIFT) V>;
 			layers = <0>;
         };
