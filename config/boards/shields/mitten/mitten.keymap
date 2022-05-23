@@ -16,17 +16,21 @@
 #define CTRL_LAYER_LEFT 5
 #define CTRL_LAYER_RIGHT 6
 
-#define NOR_APOSTROPHY NON_US_HASH
+#define NOR_BACKTICK LS(EQUAL)
+#define NOR_QUOTATION LS(NUM_2)
+#define NOR_APOSTROPHE NON_US_HASH
+#define NOR_STAR LS(NOR_APOSTROPHE)
 #define NOR_HYPHEN SLASH
+#define NOR_UNDERSCORE LS(SLASH)
 #define NOR_QUESTION_MARK LS(MINUS)
 #define NOR_EXCLAMATION_MARK LS(NUM_1)
 #define NOR_AE SINGLE_QUOTE
 #define NOR_OE SEMICOLON
 #define NOR_AA LEFT_BRACKET
 
-#define TAPPING_TERM 175
+#define TAPPING_TERM 200
 #define MOD_TAP_FLAVOR "tap-preferred"
-#define COMBO_TIMEOUT 25
+#define COMBO_TIMEOUT 35
 
 
 / { 
@@ -115,8 +119,8 @@
         compatible = "zmk,combos";
         combo_Q {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <10 11>;
-            bindings = <&c_l_mt LG(LALT) Q>;
+            key-positions = <2 3>;
+            bindings = <&kp Q>;
 			layers = <0>;
         };
 		combo_NorAE {
@@ -131,10 +135,10 @@
             bindings = <&c_l_mt LS(LCTL) V>;
 			layers = <0>;
         };
-		combo_Apostrophy {
+		combo_Apostrophe {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <21 22>;
-            bindings = <&kp NOR_APOSTROPHY>;
+            bindings = <&kp NOR_APOSTROPHE>;
 			layers = <0>;
         };
 		combo_Exclamation {
@@ -158,8 +162,8 @@
         };
 	    combo_NorOE {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <18 19>;
-            bindings = <&c_r_mt LA(LGUI) NOR_OE>;
+            key-positions = <6 7>;
+            bindings = <&kp NOR_OE>;
 			layers = <0>;
         };
 		combo_Question {
@@ -214,10 +218,10 @@
 
 		sym_layer {
 		bindings = <
-		&none                          &none                  &none                    &none                  &none 				&kp LS(MINUS) &kp RA(NUM_7)            &kp RA(NUM_0)          &none                  &none
-		&c_l_mt LGUI LS(RIGHT_BRACKET) &c_l_mt LALT LS(NUM_6) &c_l_mt LSFT NON_US_HASH &c_l_mt LCTL SLASH     &kp LS(EQUAL)			&kp LS(NUM_0) &c_r_mt LCTL RS(NUM_8)   &c_r_mt LSFT RS(NUM_9) &c_r_mt LALT RA(NUM_8) &c_r_mt LGUI RA(NUM_9)
-		&kp RA(RIGHT_BRACKET)          &kp GRAVE              &kp LS(NON_US_HASH)      &c_l_mt RALT LS(SLASH) &none 				&none         &c_r_mt RALT NON_US_BSLH &kp LS(NON_US_BSLH)    &kp LS(NUM_7)          &kp EQUAL
-																				       &trans 				  &trans	  			&trans        &trans
+		&none                          &none                  &none                      &none                  &kp NOR_BACKTICK 		&kp LS(MINUS) &kp RA(NUM_7)            &kp RA(NUM_0)          &none                  &none
+		&c_l_mt LGUI LS(RIGHT_BRACKET) &c_l_mt LALT LS(NUM_6) &c_l_mt LSFT NOR_QUOTATION &c_l_mt LCTL NOR_STAR  &kp NOR_UNDERSCORE		&kp LS(NUM_0) &c_r_mt LCTL RS(NUM_8)   &c_r_mt LSFT RS(NUM_9) &c_r_mt LALT RA(NUM_8) &c_r_mt LGUI RA(NUM_9)
+		&kp RA(RIGHT_BRACKET)          &kp GRAVE              &kp LS(NON_US_HASH)        &c_l_mt RALT LS(SLASH) &none 					&none         &c_r_mt RALT NON_US_BSLH &kp LS(NON_US_BSLH)    &kp LS(NUM_7)          &kp EQUAL
+																				         &trans 				&trans	  				&trans        &trans
 		>;
 		};		
 		
