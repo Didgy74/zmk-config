@@ -30,7 +30,7 @@
 
 #define TAPPING_TERM 200
 #define MOD_TAP_FLAVOR "tap-preferred"
-#define COMBO_TIMEOUT 35
+#define COMBO_TIMEOUT 30
 
 
 / { 
