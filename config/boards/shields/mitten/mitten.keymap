@@ -52,10 +52,10 @@
 			then-layer = <CTRL_LAYER_LEFT>;
 		};
 		
-		//ctrl_layer_right {
-		//	if-layers = <RIGHT_LAYER SYM_LAYER>;
-		//	then-layer = <CTRL_LAYER_RIGHT>;
-		//};
+		ctrl_layer_right {
+			if-layers = <RIGHT_LAYER SYM_LAYER>;
+			then-layer = <CTRL_LAYER_RIGHT>;
+		};
 	
     };
 	
