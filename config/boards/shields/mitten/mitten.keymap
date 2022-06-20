@@ -190,7 +190,7 @@
 		// 0           1      	      2                3                 4							5                    6                   7              8              9
 		&none          &kp W      	  &kp F            &kp P             &kp B						&kp J                &kp L               &kp U          &kp Y          &none
 		// 10          11      	      12               13                14							15                   16                  17             18             19
-		&c_l_mt LGUI A &c_l_mt LALT R &c_l_mt LSHIFT S &c_l_mt LCTL T    &kp G 			    		&kp M                &c_r_mt LCTL N      &c_r_mt LSFT E &c_r_mt LALT I &c_r_mt LGUI O
+		&c_l_mt LGUI A &kp R &c_l_mt LSHIFT S &c_l_mt LCTL T    &kp G 			    		&kp M                &c_r_mt LCTL N      &c_r_mt LSFT E &c_r_mt LALT I &c_r_mt LGUI O
 		// 20          21      	      22               23                24							25                   26                  27             28             29
 		&kp Z          &kp X          &kp C            &c_l_mt RALT D    &none		                &none                &c_r_mt RALT H      &kp K          &kp V          &kp Q
 		//                                             30                31							32					 33
