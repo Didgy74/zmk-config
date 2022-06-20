@@ -55,7 +55,7 @@
 		//ctrl_layer_right {
 		//	if-layers = <RIGHT_LAYER SYM_LAYER>;
 		//	then-layer = <CTRL_LAYER_RIGHT>;
-		};
+		//};
 	
     };
 	
