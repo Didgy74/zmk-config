@@ -46,19 +46,6 @@
             if-layers = <LEFT_LAYER RIGHT_LAYER>;
             then-layer = <THIRD_LAYER>;
         };
-		
-		ctrl_layer_left {
-			if-layers = <LEFT_LAYER SYM_LAYER>;
-			then-layer = <CTRL_LAYER_LEFT>;
-		};
-		
-		/*
-		ctrl_layer_right {
-			if-layers = <RIGHT_LAYER SYM_LAYER>;
-			then-layer = <CTRL_LAYER_RIGHT>;
-		};
-		*/
-	
     };
 	
 	macros {
@@ -202,10 +189,10 @@
 
  		left_layer {
 		bindings = <
-		&none    &none     &none     &none    &none 			&none     &kp NUM_7          &kp NUM_8          &kp NUM_9          &none
-		&kp LGUI &kp LALT  &kp LSFT  &kp LCTL &none				&kp NUM_0 &c_r_mt LCTL NUM_4 &c_r_mt LSFT NUM_5 &c_r_mt LALT NUM_6 &kp LGUI
-		&none    &kp LC(V) &kp LC(C) &kp RALT &none 			&none     &c_r_mt RALT NUM_1 &kp NUM_2          &kp NUM_3          &none
-									 &trans	  &trans	  		&trans    &trans
+		&none    			&none     &none     &none    &none 		&none     &kp NUM_7          &kp NUM_8          &kp NUM_9          &none
+		&kp LGUI            &kp LALT  &kp LSFT  &kp LCTL &none		&kp NUM_0 &c_r_mt LCTL NUM_4 &c_r_mt LSFT NUM_5 &c_r_mt LALT NUM_6 &kp LGUI
+		&mo CTRL_LAYER_LEFT &kp LC(V) &kp LC(C) &kp RALT &none 		&none     &c_r_mt RALT NUM_1 &kp NUM_2          &kp NUM_3          &none
+												&trans	 &trans	  	&trans    &trans
 		>;
 		};
 		
@@ -234,27 +221,16 @@
 		&kp F1          &none 		    &kp PRINTSCREEN &c_l_mt RALT F6 &none 			&none  &c_r_mt RALT F7      &none	         &test_macro 	   &kp F12   
 											            &trans          &trans			&trans &trans
 		>;
-		};	
+		};
 		
 		ctrl_layer_left {
 		bindings = <
 		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none  &bootloader	    	&none &none &none &none &none
 		&none        &reset       &none        &none  &none 				&none &none &none &none &none 
-		&bt BT_CLR   &none 	      &none        &none  &none 	    		&none &none &none &none &none
+		&none        &none 	      &bt BT_CLR   &none  &none 	    		&none &none &none &none &none
 										       &trans &trans	    		&trans &trans
 		>;
 		};	
-		
-		/*
-		ctrl_layer_right {
-		bindings = <
-		&none &none &none &none  &none	    	&bootloader &none  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 
-		&none &none &none &none  &none			&none       &none  &none        &reset       &none 
-		&none &none &none &none  &none 	    	&none   	&none  &none	    &none        &bt BT_CLR 
-						  &trans &trans	    	&trans  	&trans
-		>;
-		};
-		*/
 		
 	};
 };
