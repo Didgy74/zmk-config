@@ -227,7 +227,7 @@
 		bindings = <
 		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none  &bootloader	    	&bootloader &none &none 	 &none  &none
 		&none        &reset       &none        &none  &none 				&none 		&none &none 	 &reset &none 
-		&trans       &none 	      &bt BT_CLR   &none  &none 	    		&none 		&none &bt BT_CLR &none  &trans
+		&trans       &none 	      &bt BT_CLR   &none  &none 	    		&none 		&none &none &none  &trans
 										       &trans &trans	    		&trans 		&trans
 		>;
 		};
