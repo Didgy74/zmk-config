@@ -52,10 +52,12 @@
 			then-layer = <CTRL_LAYER_LEFT>;
 		};
 		
+		/*
 		ctrl_layer_right {
 			if-layers = <RIGHT_LAYER SYM_LAYER>;
 			then-layer = <CTRL_LAYER_RIGHT>;
 		};
+		*/
 	
     };
 	
@@ -243,6 +245,7 @@
 		>;
 		};	
 		
+		/*
 		ctrl_layer_right {
 		bindings = <
 		&none &none &none &none  &none	    	&bootloader &none  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 
@@ -250,6 +253,8 @@
 		&none &none &none &none  &none 	    	&none   	&none  &none	    &none        &bt BT_CLR 
 						  &trans &trans	    	&trans  	&trans
 		>;
-		};	
+		};
+		*/
+		
 	};
 };
