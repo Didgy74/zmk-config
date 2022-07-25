@@ -200,7 +200,7 @@
 		bindings = <
 		&kp ESC            &kp HOME &kp UP   &kp END    &kp PAGE_UP    	    &none  &none    &none    &none    &none 
 		&kp K_CONTEXT_MENU &kp LEFT &kp DOWN &kp RIGHT  &kp PAGE_DOWN	 	&none  &kp LCTL &kp LSFT &kp LALT &kp LGUI
-		&none              &none    &none    &kp DELETE &none	    	    &none  &kp RALT &none    &none    &none
+		&none              &none    &none    &kp DELETE &none	    	    &none  &kp RALT &none    &none    &mo CTRL_LAYER_LEFT
 										     &trans     &trans  		    &trans &trans
 		>;
 		};
@@ -225,12 +225,12 @@
 		
 		ctrl_layer_left {
 		bindings = <
-		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none  &bootloader	    	&none &none &none &none &none
-		&none        &reset       &none        &none  &none 				&none &none &none &none &none 
-		&none        &none 	      &bt BT_CLR   &none  &none 	    		&none &none &none &none &none
-										       &trans &trans	    		&trans &trans
+		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none  &bootloader	    	&bootloader &none &none 	 &none  &none
+		&none        &reset       &none        &none  &none 				&none 		&none &none 	 &reset &none 
+		&trans       &none 	      &bt BT_CLR   &none  &none 	    		&none 		&none &bt BT_CLR &none  &trans
+										       &trans &trans	    		&trans 		&trans
 		>;
-		};	
+		};
 		
 	};
 };
