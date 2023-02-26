@@ -65,12 +65,23 @@
 
     keymap {
         compatible = "zmk,keymap";
+		
+		
         default_layer {
         bindings = <
 					   &kp W      	  &kp F            &kp P             &kp B						&kp J                &kp L               &kp U          &kp Y
 		&c_l_mt LGUI A &c_r_mt LALT R &c_l_mt LSHIFT S &c_l_mt LCTL T    &kp G 			    		&kp M                &c_r_mt LCTL N      &c_r_mt LSFT E &c_r_mt LALT I &c_r_mt LGUI O
 					   &kp X          &kp C            &c_l_mt RALT D		                							 &c_r_mt RALT H      &kp K          &kp V
-          				                               &kp TAB 		     &kp SPC      				&kp BSPC &kp ENTER
+          				                               &kp TAB 		     &kp SPC      				&lt 1 BSPC &kp ENTER
+		>;
+		};
+		
+		right_layer {
+		bindings = <
+						   &kp HOME &kp UP   &kp END    &kp PAGE_UP    	    &none  &none    &none    &none
+		&kp K_CONTEXT_MENU &kp LEFT &kp DOWN &kp RIGHT  &kp PAGE_DOWN	 	&none  &kp LCTL &kp LSFT &kp LALT &kp LGUI
+						   &kp ESC  &none    &kp DELETE			    	    	   &kp RALT &none    &none
+										     &trans     &trans  		    &trans &trans
 		>;
 		};
 
