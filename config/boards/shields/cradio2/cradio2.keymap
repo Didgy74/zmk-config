@@ -93,7 +93,7 @@
 	//					18				19					20														21				22				23
 						&kp W          	&kp C            	&c_l_mt RALT D		                				   	&c_r_mt RALT H 	&kp K          	&kp V
 	//														24				25							26			27
-															&lt 1 TAB 		&kp SPC      				&lt 2 BSPC 	&kp ENTER
+															&kp TAB 		&lt 1 SPC      				&lt 2 BSPC 	&kp ENTER
 		>;
 		};
 		
