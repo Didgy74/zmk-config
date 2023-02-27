@@ -93,6 +93,27 @@
             bindings = <&c_r_mt LC(LSHIFT) PERIOD>;
 			layers = <0>;
         };
+		
+		combo_AE {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <1 2>;
+            bindings = <&kp NOR_AE>;
+			layers = <0>;
+        };
+		
+		combo_NorOE {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <9 10>;
+            bindings = <&c_l_mt LA(LSHIFT) NOR_OE>;
+			layers = <0>;
+        };
+		
+		combo_NorAA {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 16>;
+            bindings = <&c_r_mt LS(LALT) NOR_AA>;
+			layers = <0>;
+        };
 	};
 
     keymap {
