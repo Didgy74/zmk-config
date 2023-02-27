@@ -142,10 +142,10 @@
 		
 		right_layer {
 		bindings = <
-						   &kp ESC  &kp UP   &kp DELETE &kp PAGE_UP    	    &none  &none    &none    &none
-		&kp K_CONTEXT_MENU &kp LEFT &kp DOWN &kp RIGHT  &kp PAGE_DOWN	 	&none  &kp LCTL &kp LSFT &kp LALT &kp LGUI
-						   &kp HOME &none    &kp END			    	    	   &kp RALT &none    &none
-										     &trans     &trans  		    &trans &trans
+						   &kp ESC  &none    &kp DELETE &kp PAGE_UP    	    &none  &none    &none    &none
+		&kp K_CONTEXT_MENU &kp LEFT &kp UP 	 &kp RIGHT  &kp PAGE_DOWN	 	&none  &kp LCTL &kp LSFT &kp LALT &kp LGUI
+						   &kp HOME &kp DOWN &kp END			    	    	   &kp RALT &none    &none
+											 &trans     &trans  		    &trans &trans
 		>;
 		};
 		
