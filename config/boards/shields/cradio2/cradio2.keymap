@@ -106,6 +106,13 @@
 			layers = <0>;
         };
 		
+		combo_QuestionMark {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <5 6>;
+            bindings = <&kp NOR_QUESTION_MARK>;
+			layers = <0>;
+        };
+		
 		combo_Z {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <22 23>;
@@ -167,10 +174,10 @@
 		
 		left_layer {
 		bindings = <
-					&none     	&none     	&none    	&none 			&none     	&kp NUM_7         	&kp NUM_8          	&kp NUM_9
-		&kp LGUI    &kp LALT  	&kp LSFT  	&kp LCTL	&none			&kp NUM_0 	&c_r_mt LCTL NUM_4 	&c_r_mt LSFT NUM_5 	&c_r_mt LALT NUM_6 	&kp LGUI
-					&kp LC(V) 	&kp LC(C) 	&kp RALT								&c_r_mt RALT NUM_1 	&kp NUM_2          	&kp NUM_3
-											&trans 		&trans	  		&trans		&trans
+							&none     	&none     	&none    	&none 			&none     	&kp NUM_7         	&kp NUM_8          	&kp NUM_9
+		&c_l_mt LGUI LC(Z) 	&kp LALT  	&kp LSFT  	&kp LCTL	&none			&kp NUM_0 	&c_r_mt LCTL NUM_4 	&c_r_mt LSFT NUM_5 	&c_r_mt LALT NUM_6 	&kp LGUI
+							&kp LC(V) 	&kp LC(C) 	&kp RALT								&c_r_mt RALT NUM_1 	&kp NUM_2          	&kp NUM_3
+										&trans 		&trans	  					&trans		&trans
 		>;
 		};
 		
