@@ -106,6 +106,13 @@
 			layers = <0>;
         };
 		
+		combo_Apostrophe {
+		    timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <19 20>;
+            bindings = <&kp NOR_APOSTROPHE>;
+			layers = <0>;
+		};
+		
 		combo_QuestionMark {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <5 6>;
