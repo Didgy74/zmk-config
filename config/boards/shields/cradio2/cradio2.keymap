@@ -225,7 +225,7 @@
 		
 		ctrl_layer {
 		bindings = <
-				&&bt BT_SEL 1	&none 		&none 	&none	    	&none	&none	&none	&none
+				&bt BT_SEL 1	&none 		&none 	&none	    	&none	&none	&none	&none
 		&none 	&none 			&none 		&none 	&none			&none	&none	&none	&none	&none 
 				&trans			&bt BT_CLR	&none 	 				   		&none	&none	&none 	      
 											&trans	&trans			&trans	&trans
