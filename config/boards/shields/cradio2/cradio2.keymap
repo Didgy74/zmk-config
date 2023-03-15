@@ -180,7 +180,7 @@
 	//	8				9			  	10					11					12							13					  14				15				16				17
 		&c_l_mt LGUI A 	&c_l_mt LALT R 	&c_l_mt LSHIFT S 	&c_l_mt LCTL T		&kp G 			    		&kp M      			  &c_r_mt LCTL N 	&c_r_mt LSFT E 	&c_r_mt LALT I 	&c_r_mt LGUI O
 	//					18				19					20																	  21				22				23
-						&kp W          	&kp C            	&c_l_mt RALT D		                				   				  &c_r_mt RALT H 	&kp K          	&kp V
+						&lt 4 W        	&kp C            	&c_l_mt RALT D		                				   				  &c_r_mt RALT H 	&kp K          	&kp V
 	//														24					25							26					  27
 															&lt SYM_LAYER TAB	&lt LEFT_LAYER SPC      	&lt RIGHT_LAYER BSPC  &lt SYM_LAYER ENTER
 		>;
@@ -220,6 +220,15 @@
 		&c_l_mt LGUI F2 &c_l_mt LALT F3 &c_l_mt LSFT F4 &c_l_mt LCTL F5 &none			&none  &c_r_mt LCTL F8      &c_r_mt LSFT F9  &c_r_mt LALT F10  &c_r_mt LGUI F11 
 						&none 		    &kp PRINTSCREEN &c_l_mt RALT F6 	 				   &c_r_mt RALT F7      &none	         &test_macro 	      
 											            &trans          &trans			&trans &trans
+		>;
+		};
+		
+		ctrl_layer {
+		bindings = <
+				&&bt BT_SEL 1	&none 		&none 	&none	    	&none	&none	&none	&none
+		&none 	&none 			&none 		&none 	&none			&none	&none	&none	&none	&none 
+				&trans			&bt BT_CLR	&none 	 				   		&none	&none	&none 	      
+											&trans	&trans			&trans	&trans
 		>;
 		};
 
