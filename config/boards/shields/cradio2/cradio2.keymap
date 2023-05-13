@@ -113,6 +113,13 @@
 			layers = <0>;
 		};
 		
+		combo_Hyphen {
+		    timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <22 23>;
+            bindings = <&kp NOR_HYPHEN>;
+			layers = <0>;
+		};
+		
 		combo_QuestionMark {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <21 22>;
