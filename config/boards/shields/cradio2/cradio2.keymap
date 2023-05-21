@@ -80,22 +80,24 @@
         };
 		
 		c_l_mt: custom_left_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CUSTOM_LEFT_MOD_TAP";
-            #binding-cells = <2>;
-            flavor = MOD_TAP_FLAVOR;
-            tapping-term-ms = <TAPPING_TERM>;
+			compatible = "zmk,behavior-hold-tap";
+			label = "CUSTOM_LEFT_MOD_TAP";
+			#binding-cells = <2>;
+			flavor = MOD_TAP_FLAVOR;
+			tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp>, <&kp>;
-        };
+            hold-trigger-key-positions = <8 9 10 11 20>;
+		};
 		c_r_mt: custom_right_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CUSTOM_RIGHT_MOD_TAP";
-            #binding-cells = <2>;
-            flavor = MOD_TAP_FLAVOR;
-            tapping-term-ms = <TAPPING_TERM>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
+			compatible = "zmk,behavior-hold-tap";
+			label = "CUSTOM_RIGHT_MOD_TAP";
+			#binding-cells = <2>;
+			flavor = MOD_TAP_FLAVOR;
+			tapping-term-ms = <TAPPING_TERM>;
+			bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <14 15 16 17 21>;
+		};
+	};
 	
 	combos {
         compatible = "zmk,combos";
