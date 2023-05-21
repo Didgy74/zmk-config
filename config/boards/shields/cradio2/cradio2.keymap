@@ -32,7 +32,7 @@
 
 #define TAPPING_TERM 200
 #define QUICK_TAP_TERM 100
-#define MOD_TAP_FLAVOR "tap-unless-interrupted"
+#define MOD_TAP_FLAVOR "balanced"
 #define COMBO_TIMEOUT 30
 // All keys on left hand including thumbs
 #define KEY_INDEXES_LEFT_HAND  0  1  2  3  8  9 10 11 12 18 19 20 24 25
