@@ -30,7 +30,7 @@
 #define NOR_AA LEFT_BRACKET
 
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 500
 #define QUICK_TAP_TERM 100
 #define MOD_TAP_FLAVOR "balanced"
 #define COMBO_TIMEOUT 30
