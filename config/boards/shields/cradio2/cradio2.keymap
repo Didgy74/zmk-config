@@ -107,7 +107,7 @@
 			tapping-term-ms = <TAPPING_TERM>;
 			quick-tap-ms = <QUICK_TAP_TERM>;
 			bindings = <&kp>, <&kp>;
-			hold-trigger-key-positions = <KEY_INDEXES_LEFT_HAND KEY_INDEXES_RIGHT_MODS>
+			hold-trigger-key-positions = <KEY_INDEXES_LEFT_HAND KEY_INDEXES_RIGHT_MODS>;
 		};
 	};
 	
