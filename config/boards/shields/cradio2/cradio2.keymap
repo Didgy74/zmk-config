@@ -30,9 +30,19 @@
 #define NOR_AA LEFT_BRACKET
 
 
-#define TAPPING_TERM 225
-#define MOD_TAP_FLAVOR "balanced"
+#define TAPPING_TERM 200
+#define QUICK_TAP_TERM 100
+#define MOD_TAP_FLAVOR "tap-unless-interrupted"
 #define COMBO_TIMEOUT 30
+// All keys on left hand including thumbs
+#define KEY_INDEXES_LEFT_HAND  0  1  2  3  8  9 10 11 12 18 19 20 24 25
+// All keys on right hand including thumbs 
+#define KEY_INDEXES_RIGHT_HAND 4  5  6  7 13 14 15 16 17 21 22 23 26 27
+// All mod keys on left hand
+#define KEY_INDEXES_LEFT_MODS 8 9 10 11 20
+// All mod keys on right hand
+#define KEY_INDEXES_RIGHT_MODS 14 15 16 17 21
+
 
 / {
     conditional_layers {
@@ -85,8 +95,9 @@
 			#binding-cells = <2>;
 			flavor = MOD_TAP_FLAVOR;
 			tapping-term-ms = <TAPPING_TERM>;
+			quick-tap-ms = <QUICK_TAP_TERM>;
             bindings = <&kp>, <&kp>;
-            //hold-trigger-key-positions = <8 9 10 11 20>;
+            hold-trigger-key-positions = <KEY_INDEXES_RIGHT_HAND KEY_INDEXES_LEFT_MODS>;
 		};
 		c_r_mt: custom_right_mod_tap {
 			compatible = "zmk,behavior-hold-tap";
@@ -94,8 +105,9 @@
 			#binding-cells = <2>;
 			flavor = MOD_TAP_FLAVOR;
 			tapping-term-ms = <TAPPING_TERM>;
+			quick-tap-ms = <QUICK_TAP_TERM>;
 			bindings = <&kp>, <&kp>;
-            //hold-trigger-key-positions = <14 15 16 17 21>;
+			hold-trigger-key-positions = <KEY_INDEXES_LEFT_HAND KEY_INDEXES_RIGHT_MODS>
 		};
 	};
 	
