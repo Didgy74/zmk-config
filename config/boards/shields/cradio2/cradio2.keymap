@@ -31,7 +31,7 @@
 
 
 #define TAPPING_TERM 225
-#define MOD_TAP_FLAVOR "tap-unless-interrupted"
+#define MOD_TAP_FLAVOR "balanced"
 #define COMBO_TIMEOUT 30
 
 / {
@@ -86,7 +86,7 @@
 			flavor = MOD_TAP_FLAVOR;
 			tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <8 9 10 11 20>;
+            //hold-trigger-key-positions = <8 9 10 11 20>;
 		};
 		c_r_mt: custom_right_mod_tap {
 			compatible = "zmk,behavior-hold-tap";
@@ -95,7 +95,7 @@
 			flavor = MOD_TAP_FLAVOR;
 			tapping-term-ms = <TAPPING_TERM>;
 			bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <14 15 16 17 21>;
+            //hold-trigger-key-positions = <14 15 16 17 21>;
 		};
 	};
 	
