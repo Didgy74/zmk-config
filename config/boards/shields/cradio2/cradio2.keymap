@@ -109,6 +109,14 @@
 			bindings = <&kp>, <&kp>;
 			hold-trigger-key-positions = <KEY_INDEXES_LEFT_HAND KEY_INDEXES_RIGHT_MODS>;
 		};
+		
+		sh_two_kp: shift_two_keypress {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_TWO_KEYPRESS";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            mods = <(MOD_LSFT)>;
+        };
 	};
 	
 	combos {
@@ -134,17 +142,10 @@
 			layers = <0>;
 		};
 		
-		combo_QuestionMark {
+		combo_QuestionMark_ExclamationMark {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <21 22>;
-            bindings = <&kp NOR_QUESTION_MARK>;
-			layers = <0>;
-        };
-		
-		combo_ExclamationMark {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <19 20>;
-            bindings = <&kp NOR_EXCLAMATION_MARK>;
+            bindings = <&sh_two_kp NOR_EXCLAMATION_MARK NOR_QUESTION_MARK>;
 			layers = <0>;
         };
 		
