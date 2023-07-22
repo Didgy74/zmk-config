@@ -114,7 +114,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "QUESTION_EXCLAMATION";
             #binding-cells = <0>;
-            bindings = <&kp NOR_EXCLAMATION_MARK>, <&kp NOR_QUESTION_MARK>;
+            bindings = <&kp NOR_QUESTION_MARK>, <&kp NOR_EXCLAMATION_MARK>;
             mods = <(MOD_LSFT)>;
         };
 	};
