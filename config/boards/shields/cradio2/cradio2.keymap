@@ -110,11 +110,11 @@
 			hold-trigger-key-positions = <KEY_INDEXES_LEFT_HAND KEY_INDEXES_RIGHT_MODS>;
 		};
 		
-		sh_two_kp: shift_two_keypress {
+        lsh_quest_excl: lshift_quest_excl {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_TWO_KEYPRESS";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            label = "QUESTION_EXCLAMATION";
+            #binding-cells = <0>;
+            bindings = <&kp NOR_EXCLAMATION_MARK>, <&kp NOR_QUESTION_MARK>;
             mods = <(MOD_LSFT)>;
         };
 	};
@@ -145,7 +145,7 @@
 		combo_QuestionMark_ExclamationMark {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <21 22>;
-            bindings = <&sh_two_kp NOR_EXCLAMATION_MARK NOR_QUESTION_MARK>;
+            bindings = <&lsh_quest_excl>;
 			layers = <0>;
         };
 		
