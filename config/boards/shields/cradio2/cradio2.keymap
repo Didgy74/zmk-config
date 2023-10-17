@@ -146,6 +146,13 @@
         };
 		
 		
+		only_0: only_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ONLY_0";
+            #binding-cells = <0>;
+            bindings = <&kp NUM_0>, <&kp NUM_0>;
+            mods = <(MOD_LSFT)>;
+        };
 		only_1: only_1 {
             compatible = "zmk,behavior-mod-morph";
             label = "ONLY_1";
@@ -169,7 +176,7 @@
         };
 		only_7: only_7 {
             compatible = "zmk,behavior-mod-morph";
-            label = "ONLY_3";
+            label = "ONLY_7";
             #binding-cells = <0>;
             bindings = <&kp NUM_7>, <&kp NUM_7>;
             mods = <(MOD_LSFT)>;
