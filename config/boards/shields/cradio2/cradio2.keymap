@@ -237,7 +237,7 @@
             bindings = <&kp Q>;
 			layers = <0>;
         };
-		
+	
 		combo_Apostrophe_Quotation {
 		    timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <LEFT_MIDDLE_BOTTOM LEFT_INDEX_BOTTOM>;
@@ -259,7 +259,12 @@
             bindings = <&kp Z>;
 			layers = <0>;
         };
-		
+		combo_Hyphen {
+		    timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RIGHT_INDEX_TOP RIGHT_MIDDLE_BOTTOM>;
+            bindings = <&kp NOR_HYPHEN>;
+			layers = <0>;
+		};
 		combo_Comma {
             timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LEFT_MIDDLE_MIDDLE LEFT_INDEX_MIDDLE>;
@@ -297,12 +302,6 @@
 		
 		
 		// Left layer combos start
-		combo_Hyphen {
-		    timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_MIDDLE_BOTTOM RIGHT_RING_BOTTOM>;
-            bindings = <&kp NOR_HYPHEN>;
-			layers = <LEFT_LAYER>;
-		};
 		
 		combo_Hash {
 		    timeout-ms = <COMBO_TIMEOUT>;
