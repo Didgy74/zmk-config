@@ -5,6 +5,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
+
 // HAND_FINGER_ROW
 #define LEFT_PINKY_MIDDLE 8
 #define LEFT_RING_TOP 0
@@ -16,7 +18,9 @@
 #define LEFT_INDEX_TOP 2
 #define LEFT_INDEX_MIDDLE 11
 #define LEFT_INDEX_BOTTOM 20
+#define RIGHT_MIDDLE_TOP 6
 #define RIGHT_MIDDLE_BOTTOM 22
+#define RIGHT_RING_TOP 23
 #define RIGHT_RING_BOTTOM 23
 
 #define LEFT_LAYER 1
@@ -132,11 +136,47 @@
             mods = <(MOD_LSFT)>;
         };
 		
+		
+		only_1: only_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ONLY_1";
+            #binding-cells = <0>;
+            bindings = <&kp NUM_1>, <&kp NUM_1>;
+            mods = <(MOD_LSFT)>;
+        };
 		only_2: only_2 {
             compatible = "zmk,behavior-mod-morph";
             label = "ONLY_2";
             #binding-cells = <0>;
             bindings = <&kp NUM_2>, <&kp NUM_2>;
+            mods = <(MOD_LSFT)>;
+        }
+		only_3: only_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ONLY_3";
+            #binding-cells = <0>;
+            bindings = <&kp NUM_3>, <&kp NUM_3>;
+            mods = <(MOD_LSFT)>;
+        };
+		only_7: only_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ONLY_3";
+            #binding-cells = <0>;
+            bindings = <&kp NUM_7>, <&kp NUM_7>;
+            mods = <(MOD_LSFT)>;
+        };
+		only_8: only_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ONLY_8";
+            #binding-cells = <0>;
+            bindings = <&kp NUM_8>, <&kp NUM_8>;
+            mods = <(MOD_LSFT)>;
+        };
+		only_9: only_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ONLY_9";
+            #binding-cells = <0>;
+            bindings = <&kp NUM_9>, <&kp NUM_9>;
             mods = <(MOD_LSFT)>;
         };
 	};
@@ -173,7 +213,7 @@
 		
 		combo_Hyphen {
 		    timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <22 23>;
+            key-positions = <RIGHT_RING_BOTTOM RIGHT_MIDDLE_BOTTOM>;
             bindings = <&kp NOR_HYPHEN>;
 			layers = <0>;
 		};
@@ -237,8 +277,8 @@
 						&kp X      	  	&kp F            	&kp P  			&kp B					&kp J      			 	&kp L          	&kp U          	&kp Y
 	//	8				9			  	10					11				12						13					 	14				15				16				17
 		&c_l_mt LGUI A 	&c_l_mt LALT R 	&c_l_mt LSHIFT S 	&c_l_mt LCTL T	&kp G 			    	&kp M					&c_r_mt LCTL N 	&c_r_mt LSFT E 	&c_r_mt LALT I 	&c_r_mt LGUI O
-	//					18				19					20										21						22				23
-						&lt 4 W        	&kp C            	&c_l_mt RALT D							&c_r_mt RALT H 			&kp K          	&kp V
+	//					18				19					20																21				22				23
+						&lt 4 W        	&kp C            	&c_l_mt RALT D													&c_r_mt RALT H 	&kp K          	&kp V
 	//														24				25						26					 	27
 															&none 		 	&lt LEFT_LAYER SPC		&lt RIGHT_LAYER BSPC	&none
 		>;
@@ -246,9 +286,9 @@
 		
 		left_layer {
 		bindings = <
-							&none     	&none     	&none    			&none 			&none     	&kp NUM_7         	&kp NUM_8          	&kp NUM_9
+							&none     	&none     	&none    			&none 			&none     	&only_7         	&only_8          	&only_9
 		&c_l_mt LGUI LC(Z) 	&kp LALT  	&kp LSFT  	&kp LCTL			&none			&kp NUM_0 	&c_r_mt LCTL NUM_4 	&c_r_mt LSFT NUM_5 	&c_r_mt LALT NUM_6 	&kp LGUI
-							&kp LC(X) 	&kp LC(C) 	&c_l_mt RALT LC(V)								&c_r_mt RALT NUM_1 	&only_2          	&kp NUM_3
+							&kp LC(X) 	&kp LC(C) 	&c_l_mt RALT LC(V)								&c_r_mt RALT NUM_3 	&only_2          	&kp only_3
 													&trans 		&trans	  							&trans		&trans
 		>;
 		};
