@@ -261,7 +261,7 @@
         };
 		combo_Hyphen {
 		    timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_INDEX_TOP RIGHT_MIDDLE_BOTTOM>;
+            key-positions = <RIGHT_INDEX_TOP RIGHT_MIDDLE_TOP>;
             bindings = <&kp NOR_HYPHEN>;
 			layers = <0>;
 		};
