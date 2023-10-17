@@ -217,6 +217,7 @@
         };
 		
 		
+		// Base layer combos start
         combo_Q {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <LEFT_RING_TOP LEFT_MIDDLE_TOP>;
@@ -229,13 +230,6 @@
             key-positions = <LEFT_MIDDLE_BOTTOM LEFT_INDEX_BOTTOM>;
             bindings = <&kp NOR_APOSTROPHE>;
 			layers = <0>;
-		};
-		
-		combo_Hyphen {
-		    timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_RING_BOTTOM RIGHT_MIDDLE_BOTTOM>;
-            bindings = <&kp NOR_HYPHEN>;
-			layers = <LEFT_LAYER>;
 		};
 		
 		combo_QuestionMark_ExclamationMark {
@@ -286,6 +280,23 @@
             bindings = <&c_r_mt LS(LALT) NOR_AA>;
 			layers = <0>;
         };
+		// Base layer combos end
+		
+		
+		// Left layer combos
+		combo_Hyphen {
+		    timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RIGHT_MIDDLE_BOTTOM RIGHT_RING_BOTTOM>;
+            bindings = <&kp NOR_HYPHEN>;
+			layers = <LEFT_LAYER>;
+		};
+		
+		combo_Hash {
+		    timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RIGHT_INDEX_BOTTOM RIGHT_MIDDLE_BOTTOM>;
+            bindings = <&kp NOR_HASH>;
+			layers = <LEFT_LAYER>;
+		};
 	};
 
     keymap {
