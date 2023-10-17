@@ -222,9 +222,21 @@
             bindings = <&lt SYM_LAYER TAB>;
 			layers = <0>;
         };
+		combo_leftsymlayer2 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <LEFT_RING_MIDDLE LEFT_INDEX_MIDDLE>;
+            bindings = <&lt SYM_LAYER TAB>;
+			layers = <0>;
+        };
 		combo_rightsymlayer {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <RIGHT_RING_BOTTOM RIGHT_MIDDLE_BOTTOM>;
+            bindings = <&lt SYM_LAYER ENTER>;
+			layers = <0>;
+        };
+		combo_rightsymlayer2 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RIGHT_INDEX_MIDDLE RIGHT_RING_MIDDLE>;
             bindings = <&lt SYM_LAYER ENTER>;
 			layers = <0>;
         };
@@ -272,12 +284,6 @@
 		combo_Hyphen {
 		    timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <RIGHT_INDEX_TOP RIGHT_MIDDLE_TOP>;
-            bindings = <&kp NOR_HYPHEN>;
-			layers = <0>;
-		};
-		combo_Hyphen2 {
-		    timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_INDEX_MIDDLE RIGHT_RING_MIDDLE>;
             bindings = <&kp NOR_HYPHEN>;
 			layers = <0>;
 		};
