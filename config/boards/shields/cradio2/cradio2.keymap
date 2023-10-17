@@ -144,11 +144,20 @@
 			hold-trigger-key-positions = <KEY_INDEXES_LEFT_HAND KEY_INDEXES_RIGHT_MODS>;
 		};
 		
+		// Puts question and exclamation mark on the same shift key
         lsh_quest_excl: lshift_quest_excl {
             compatible = "zmk,behavior-mod-morph";
             label = "QUESTION_EXCLAMATION";
             #binding-cells = <0>;
             bindings = <&kp NOR_QUESTION_MARK>, <&kp NOR_EXCLAMATION_MARK>;
+            mods = <(MOD_LSFT)>;
+        };
+		
+		lsh_apostrophe_quotation: lsh_apostrophe_quotation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APOSTROPHE_QUOTATION";
+            #binding-cells = <0>;
+            bindings = <&kp NOR_APOSTROPHE>, <&kp NOR_QUOTATION>;
             mods = <(MOD_LSFT)>;
         };
 		
@@ -229,10 +238,10 @@
 			layers = <0>;
         };
 		
-		combo_Apostrophe {
+		combo_Apostrophe_Quotation {
 		    timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <LEFT_MIDDLE_BOTTOM LEFT_INDEX_BOTTOM>;
-            bindings = <&kp NOR_APOSTROPHE>;
+            bindings = <&lsh_apostrophe_quotation>;
 			layers = <0>;
 		};
 		
