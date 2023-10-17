@@ -318,7 +318,7 @@
 		
         default_layer {
         bindings = <
-	//				   	0			  	1				 	2				3						 4		   			  	5	 		  	6				7
+	//				   	0			  	1				 	2				3						4		   			  	5	 		  	6				7
 						&kp X      	  	&kp F            	&kp P  			&kp B					&kp J      			 	&kp L          	&kp U          	&kp Y
 	//	8				9			  	10					11				12						13					 	14				15				16				17
 		&c_l_mt LGUI A 	&c_l_mt LALT R 	&c_l_mt LSHIFT S 	&c_l_mt LCTL T	&kp G 			    	&kp M					&c_r_mt LCTL N 	&c_r_mt LSFT E 	&c_r_mt LALT I 	&c_r_mt LGUI O
