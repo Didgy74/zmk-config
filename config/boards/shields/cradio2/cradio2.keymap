@@ -251,7 +251,7 @@
         };
 		combo_Period {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <14 15>;
+            key-positions = <RIGHT_INDEX_MIDDLE RIGHT_MIDDLE_MIDDLE>;
             bindings = <&c_r_mt LC(LSHIFT) PERIOD>;
 			layers = <0>;
         };
