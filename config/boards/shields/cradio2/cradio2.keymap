@@ -229,30 +229,40 @@
 			layers = <0>;
         };
 		
-		
+		//
 		// Base layer combos start
+		//
         combo_Q {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <LEFT_RING_TOP LEFT_MIDDLE_TOP>;
             bindings = <&kp Q>;
 			layers = <0>;
         };
-	
 		combo_Apostrophe_Quotation {
 		    timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <LEFT_MIDDLE_BOTTOM LEFT_INDEX_BOTTOM>;
             bindings = <&lsh_apostrophe_quotation>;
 			layers = <0>;
 		};
-		
-		combo_QuestionMark_ExclamationMark {
+		combo_Comma {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_INDEX_BOTTOM RIGHT_MIDDLE_BOTTOM>;
-            bindings = <&lsh_quest_excl>;
+			key-positions = <LEFT_MIDDLE_MIDDLE LEFT_INDEX_MIDDLE>;
+            bindings = <&c_l_mt LS(LCTL) COMMA>;
+			layers = <0>;
+        };
+		combo_NorAE {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <LEFT_MIDDLE_TOP LEFT_INDEX_TOP>;
+            bindings = <&kp NOR_AE>;
+			layers = <0>;
+        };
+		combo_NorOE {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <LEFT_RING_MIDDLE LEFT_MIDDLE_MIDDLE>;
+            bindings = <&c_l_mt LA(LSHIFT) NOR_OE>;
 			layers = <0>;
         };
 		
-	
 		combo_Z {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <RIGHT_MIDDLE_TOP RIGHT_RING_TOP>;
@@ -265,33 +275,24 @@
             bindings = <&kp NOR_HYPHEN>;
 			layers = <0>;
 		};
-		combo_Comma {
-            timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LEFT_MIDDLE_MIDDLE LEFT_INDEX_MIDDLE>;
-            bindings = <&c_l_mt LS(LCTL) COMMA>;
+		combo_Hyphen2 {
+		    timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RIGHT_INDEX_MIDDLE RIGHT_RING_MIDDLE>;
+            bindings = <&kp NOR_HYPHEN>;
 			layers = <0>;
-        };
+		};
 		combo_Period {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <RIGHT_INDEX_MIDDLE RIGHT_MIDDLE_MIDDLE>;
             bindings = <&c_r_mt LC(LSHIFT) PERIOD>;
 			layers = <0>;
         };
-	
-		combo_NorAE {
+		combo_QuestionMark_ExclamationMark {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <LEFT_MIDDLE_TOP LEFT_INDEX_TOP>;
-            bindings = <&kp NOR_AE>;
+            key-positions = <RIGHT_INDEX_BOTTOM RIGHT_MIDDLE_BOTTOM>;
+            bindings = <&lsh_quest_excl>;
 			layers = <0>;
         };
-		
-		combo_NorOE {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <LEFT_RING_MIDDLE LEFT_MIDDLE_MIDDLE>;
-            bindings = <&c_l_mt LA(LSHIFT) NOR_OE>;
-			layers = <0>;
-        };
-		
 		combo_NorAA {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <RIGHT_MIDDLE_MIDDLE RIGHT_RING_MIDDLE>;
