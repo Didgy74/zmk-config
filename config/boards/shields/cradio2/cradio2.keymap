@@ -57,6 +57,7 @@
 #define NOR_QUESTION_MARK LS(MINUS)
 #define NOR_EXCLAMATION_MARK LS(NUM_1)
 #define NOR_PLUS MINUS
+#define NOR_EQUAL LS(NUM_0)
 #define NOR_AE SINGLE_QUOTE
 #define NOR_OE SEMICOLON
 #define NOR_AA LEFT_BRACKET
@@ -74,7 +75,7 @@
 #define TAPPING_TERM 250
 #define QUICK_TAP_TERM 100
 #define MOD_TAP_FLAVOR "balanced"
-#define COMBO_TIMEOUT 30
+#define COMBO_TIMEOUT 40
 
 
 
@@ -218,23 +219,11 @@
 		
 		combo_leftsymlayer {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <LEFT_RING_BOTTOM LEFT_MIDDLE_BOTTOM>;
-            bindings = <&lt SYM_LAYER TAB>;
-			layers = <0>;
-        };
-		combo_leftsymlayer2 {
-            timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <LEFT_RING_MIDDLE LEFT_INDEX_MIDDLE>;
             bindings = <&lt SYM_LAYER TAB>;
 			layers = <0>;
         };
 		combo_rightsymlayer {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_RING_BOTTOM RIGHT_MIDDLE_BOTTOM>;
-            bindings = <&lt SYM_LAYER ENTER>;
-			layers = <0>;
-        };
-		combo_rightsymlayer2 {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <RIGHT_INDEX_MIDDLE RIGHT_RING_MIDDLE>;
             bindings = <&lt SYM_LAYER ENTER>;
@@ -283,7 +272,7 @@
         };
 		combo_Hyphen {
 		    timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_INDEX_TOP RIGHT_MIDDLE_TOP>;
+            key-positions = <RIGHT_MIDDLE_BOTTOM RIGHT_RING_BOTTOM>;
             bindings = <&kp NOR_HYPHEN>;
 			layers = <0>;
 		};
@@ -316,7 +305,14 @@
             bindings = <&kp NOR_HASH>;
 			layers = <LEFT_LAYER>;
 		};
+		combo_Equal {
+		    timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RIGHT_INDEX_MIDDLE RIGHT_MIDDLE_MIDDLE>;
+            bindings = <&kp NOR_EQUAL>;
+			layers = <LEFT_LAYER>;
+		};
 		// Left layer combos end
+		
 	};
 
     keymap {
