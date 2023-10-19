@@ -299,10 +299,10 @@
 		
 		// Left layer combos start
 		
-		combo_Hash {
+		combo_Plus {
 		    timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <RIGHT_INDEX_BOTTOM RIGHT_MIDDLE_BOTTOM>;
-            bindings = <&kp NOR_HASH>;
+            bindings = <&kp NOR_PLUS>;
 			layers = <LEFT_LAYER>;
 		};
 		combo_Equal {
