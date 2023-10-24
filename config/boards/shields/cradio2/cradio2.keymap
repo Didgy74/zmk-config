@@ -75,7 +75,7 @@
 #define TAPPING_TERM 250
 #define QUICK_TAP_TERM 100
 #define MOD_TAP_FLAVOR "balanced"
-#define COMBO_TIMEOUT 40
+#define COMBO_TIMEOUT 35
 
 
 
@@ -219,13 +219,13 @@
 		
 		combo_leftsymlayer {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <LEFT_RING_BOTTOM LEFT_INDEX_BOTTOM>;
+            key-positions = <LEFT_RING_MIDDLE LEFT_INDEX_MIDDLE>;
             bindings = <&lt SYM_LAYER TAB>;
 			layers = <0>;
         };
 		combo_rightsymlayer {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_INDEX_BOTTOM RIGHT_RING_BOTTOM>;
+            key-positions = <RIGHT_INDEX_MIDDLE RIGHT_RING_MIDDLE>;
             bindings = <&lt SYM_LAYER ENTER>;
 			layers = <0>;
         };
