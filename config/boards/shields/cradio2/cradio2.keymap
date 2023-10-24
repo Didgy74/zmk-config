@@ -219,13 +219,13 @@
 		
 		combo_leftsymlayer {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <LEFT_RING_MIDDLE LEFT_INDEX_MIDDLE>;
+            key-positions = <LEFT_RING_BOTTOM LEFT_INDEX_BOTTOM>;
             bindings = <&lt SYM_LAYER TAB>;
 			layers = <0>;
         };
 		combo_rightsymlayer {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <RIGHT_INDEX_MIDDLE RIGHT_RING_MIDDLE>;
+            key-positions = <RIGHT_INDEX_BOTTOM RIGHT_RING_BOTTOM>;
             bindings = <&lt SYM_LAYER ENTER>;
 			layers = <0>;
         };
@@ -352,10 +352,10 @@
 				
 		sym_layer {
 		bindings = <
-								&none                      	&none                      	&none                	&kp NOR_BACKTICK 		&kp NOR_PLUS  	&kp NOR_CURLYBRACE_LEFT				&kp NOR_CURLYBRACE_RIGHT			&kp NOR_BACKSLASH
-		&c_l_mt LGUI NOR_TILDE  &c_l_mt LALT NOR_AMPERSAND 	&c_l_mt LSFT NOR_QUOTATION 	&c_l_mt LCTL NOR_STAR	&kp NOR_HASH   			&none 			&c_r_mt LCTL NOR_PARENTHESIS_LEFT	&c_r_mt LSFT NOR_PARENTHESIS_RIGHT	&c_r_mt LALT NOR_SQUAREBRACKET_LEFT &c_r_mt LGUI NOR_SQUAREBRACKET_RIGHT
-								&kp NOR_VERTICALBAR        	&kp LS(NON_US_HASH)        	&kp RALT	 													&c_r_mt RALT NON_US_BSLH			&kp LS(NON_US_BSLH)					&kp NOR_FORWARDSLASH
-																						&trans 		            &trans	  				&trans        	&trans
+								&none                      	&none                      	&none                	&kp NOR_BACKTICK 		&none  	&kp NOR_CURLYBRACE_LEFT				&kp NOR_CURLYBRACE_RIGHT			&kp NOR_BACKSLASH
+		&c_l_mt LGUI NOR_TILDE  &c_l_mt LALT NOR_AMPERSAND 	&c_l_mt LSFT NOR_QUOTATION 	&c_l_mt LCTL NOR_STAR	&kp NOR_HASH   			&none 	&c_r_mt LCTL NOR_PARENTHESIS_LEFT	&c_r_mt LSFT NOR_PARENTHESIS_RIGHT	&c_r_mt LALT NOR_SQUAREBRACKET_LEFT &c_r_mt LGUI NOR_SQUAREBRACKET_RIGHT
+								&kp NOR_VERTICALBAR        	&kp LS(NON_US_HASH)        	&kp RALT	 											&c_r_mt RALT NON_US_BSLH			&kp LS(NON_US_BSLH)					&kp NOR_FORWARDSLASH
+																						&trans 		            &trans	  				&trans	&trans
 		>;
 		};
 		
