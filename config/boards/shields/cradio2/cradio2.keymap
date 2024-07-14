@@ -75,7 +75,7 @@
 #define TAPPING_TERM 250
 #define QUICK_TAP_TERM 100
 #define MOD_TAP_FLAVOR "balanced"
-#define COMBO_TIMEOUT 35
+#define COMBO_TIMEOUT 25
 
 
 
