@@ -19,6 +19,5 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: cradio_left
-  - board: seeeduino_xiao_ble
-    shield: cradio_right
+    shield: mitten_left
+    

@@ -1,0 +1,9 @@
+file_format: "1"
+id: mitten
+name: Mitten
+type: shield
+features:
+  - keys
+siblings:
+  - mitten_left
+  - mitten_right
